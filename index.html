@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sục Lâu Dài</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        main {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sục Lâu Dài</h1>
+    </header>
+
+    <main>
+        <p>Sục lâu dài ib Zalo: <strong>066666666</strong></p>
+        <p>Hoặc Tele: <strong>@succukhongche</strong></p>
+        
+        <!-- Video không có điều khiển và tự động phát -->
+        <video id="video" width="560" height="315" autoplay loop>
+            <source src="https://raw.githubusercontent.com/HuyHahack/funk2.github.io/main/suc.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sục Lâu Dài. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const video = document.getElementById("video");
+
+        // Đảm bảo video không thể dừng được
+        video.addEventListener('pause', function() {
+            video.play();
+        });
+    </script>
+
+</body>
+</html>
